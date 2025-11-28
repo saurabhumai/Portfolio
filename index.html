@@ -3,111 +3,76 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Saurabh Virendra Yadav</title>
+  <title>Saurabh — Portfolio</title>
+  <meta name="description" content="Portfolio — Saurabh" />
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Saurabh Virendra Yadav</a>
+  <header class="container header">
+    <a class="brand" href="index.html">
+      <div class="logo">SV</div>
+      <div>
+        <div style="font-weight:700">Saurabh Virendra</div>
+        <small style="color:var(--muted)">BSc IT • DevOps learner</small>
+      </div>
+    </a>
 
-      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a class="button" href="projects.html">View work</a>
+    </nav>
 
-      <nav id="main-nav" class="nav">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <button id="menuBtn" class="menu-toggle" aria-label="menu">☰</button>
   </header>
 
-  <main>
+  <main class="container">
     <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-text">
-          <h1>Cloud / DevOps</h1>
-          <p>I am a learner focused on Cloud and DevOps with practical experience using Linux and basic cloud tools. My goal is to become a DevOps engineer; I enjoy building reliable, maintainable systems and automating tasks to improve developer workflows.</p>
-          <p class="hero-actions">
-            <a class="btn" href="projects.html">View Projects</a>
-            <a class="btn ghost" href="contact.html">Contact</a>
-          </p>
-        </div>
-
-        <div class="hero-card">
-          <div class="card-stats">
-            <div>
-              <strong>3</strong>
-              <span>Projects</span>
-            </div>
-            <div>
-              <strong>5</strong>
-              <span>Skills</span>
-            </div>
-            <div>
-              <strong>Learning</strong>
-              <span>Cloud & DevOps</span>
-            </div>
-          </div>
+      <div class="hero-card card">
+        <div class="hero-avatar">SV</div>
+        <div>
+          <h1>Hi, I'm Saurabh — I build learning projects and practice DevOps.</h1>
+          <p>Student. Learner. I create simple, clean websites and automate small tasks. This site is a portfolio demo using GitHub Pages and Cloud Shell.</p>
+          <p style="margin-top:0.6rem"><a class="button" href="projects.html">See projects</a> <a style="margin-left:0.8rem;color:var(--muted)" href="about.html">Read more</a></p>
         </div>
       </div>
     </section>
 
-    <section class="intro container">
-      <h2>Selected work</h2>
-      <p>Small preview. Full list on the projects page.</p>
+    <section class="section">
+      <div class="card">
+        <h3>Featured projects</h3>
+        <div class="grid" style="margin-top:1rem">
+          <article class="project">
+            <h4>Portfolio (this site)</h4>
+            <p class="badge">HTML • CSS • GitHub Pages</p>
+            <p>Dark theme one-page portfolio with separate pages for projects, about and contact.</p>
+            <small><a href="projects.html">Open project</a></small>
+          </article>
 
-      <div class="card-row">
-        <article class="project-card">
-          <h3>Cloud Roadmap Dashboard</h3>
-          <p>A small dashboard that tracks learning progress and resources for Cloud and DevOps topics.</p>
-          <div class="card-footer">
-            <a href="projects.html">Details</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>CI/CD Demo Pipeline</h3>
-          <p>Example pipeline demonstrating automatic build and deploy using simple scripts and Docker.</p>
-          <div class="card-footer">
-            <a href="projects.html">Details</a>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <h3>Linux Setup Scripts</h3>
-          <p>Collection of scripts to set up a development environment on Ubuntu, including common tools and dotfiles.</p>
-          <div class="card-footer">
-            <a href="projects.html">Details</a>
-          </div>
-        </article>
+          <article class="project">
+            <h4>Sample automation</h4>
+            <p class="badge">Shell • scripts</p>
+            <p>Small scripts I use to practice file transfers, backups and web deployment test flows.</p>
+            <small><a href="projects.html">Open project</a></small>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section class="skills container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>AWS</li><li>Linux</li><li>Python</li><li>Docker</li><li>Git</li>
-      </ul>
+    <section class="section card">
+      <h3>Quick contact</h3>
+      <p>If you want to reach out: <a href="contact.html" style="color:var(--accent)">contact page</a></p>
+      <p style="margin-top:0.6rem"><small>Tip: to update this site edit the files and push to GitHub. GitHub Pages will publish automatically from main.</small></p>
     </section>
+
+    <footer>
+      <small>© <span id="year"></span> Saurabh • <a href="https://github.com/saurabhumai" style="color:var(--muted)">GitHub</a></small>
+    </footer>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year"></span> Saurabh Virendra Yadav. All rights reserved.</small>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a class="download-zip" href="saurabh_portfolio.zip" download>Download ZIP</a>
-      </nav>
-    </div>
-  </footer>
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>

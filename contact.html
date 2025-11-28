@@ -3,68 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Contact — Saurabh Virendra Yadav</title>
+  <title>Contact — Saurabh</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Saurabh Virendra Yadav</a>
-      <button id="nav-toggle-4" class="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger"></span>
-      </button>
-      <nav id="main-nav-4" class="nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a class="active" href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header class="container header">
+    <a class="brand" href="index.html"><div class="logo">SV</div><div><div style="font-weight:700">Saurabh</div></div></a>
+    <nav class="nav" id="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a></nav>
+    <button id="menuBtn" class="menu-toggle">☰</button>
   </header>
 
-  <main class="container contact-main">
-    <h1>Contact</h1>
-    <p>If you want to get in touch, send a message using the form or email me directly at <a href="mailto:yadavsaurabhr0782@gmail.com">yadavsaurabhr0782@gmail.com</a>.</p>
-
-    <form id="contact-form" class="contact-form" action="javascript:void(0)" novalidate>
-      <label>
-        Name
-        <input type="text" name="name" id="name" required minlength="2" />
-      </label>
-
-      <label>
-        Email
-        <input type="email" name="email" id="email" required />
-      </label>
-
-      <label>
-        Message
-        <textarea name="message" id="message" rows="6" required minlength="10"></textarea>
-      </label>
-
-      <div class="form-actions">
-        <button class="btn" type="submit">Send message</button>
-        <button class="btn ghost" type="button" id="mailto-btn">Open email</button>
-        <a class="btn" href="saurabh_portfolio.zip" download>Download ZIP</a>
-      </div>
-
-      <p id="form-status" class="form-status" aria-live="polite"></p>
-    </form>
+  <main class="container">
+    <section class="section card">
+      <h2>Contact</h2>
+      <p>If you want to reach me, send an email to <code>yourname@example.com</code> or use the GitHub profile link on the homepage.</p>
+      <p><small>Note: replace the email in the file with the real address you want to use.</small></p>
+    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <small>© <span id="year-4"></span> Saurabh Virendra Yadav.</small>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a class="download-zip" href="saurabh_portfolio.zip" download>Download ZIP</a>
-      </nav>
-    </div>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
